@@ -2,7 +2,7 @@ var gulp = require('gulp');
 var path = require('path');
 var del = require('del');
 var $ = require('gulp-load-plugins')({
-  pattern: '*',
+  pattern: '*'
 });
 
 var environment = $.util.env.type || 'development';
@@ -82,6 +82,7 @@ gulp.task('fonts', function(cb) {
 
 gulp.task('watch', function() {
   gulp.watch(src + 'assets/styles/**/*.less', ['styles']);
+  gulp.watch(src + 'assets/styles/*.less', ['styles']);
   gulp.watch(src + 'index.html', ['html']);
   gulp.watch([src + 'app/**/*.js', src + 'app/**/*.hbs'], ['scripts']);
 });

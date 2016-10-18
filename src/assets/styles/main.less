@@ -1,1 +1,15 @@
+@bluePrimary: #3279b6;
+@import 'bootstrap';
 @import 'views/login';
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+a:hover, button:hover, i:hover {
+@include transition("color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out, opacity .3s ease-in-out");
+  text-decoration: none;
+}
+
+a:active, a:focus { outline: none; text-decoration: none; }
