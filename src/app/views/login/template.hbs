@@ -6,20 +6,23 @@
     <div class="loginPage__box fadeInDown animated">
         <div class="loginPage__logo-header">Booking Hooliday</div>
         <div class="loginPage__form">
-            <form >
+
                 <div class="form-group">
-                    <input type="email" placeholder="email" class="form-control"/>
+                    <input type="email" placeholder="email" class="form-control email-input" value="{{email}}"/>
                 </div>
                 <div class="form-group">
-                    <input type="password" placeholder="password" class="form-control"  name="password"/>
+                    <input type="password" placeholder="password" class="form-control password-input" value="{{password}}"/><br/>
                 </div>
                 <div class="loginPage__forgot">
-                    <span class="link" (click)="switchForms(false, true)">Forgot password?</span>
+                    <span class="link">Forgot password?</span>
+                </div>
+                <div class="errors">
+
                 </div>
                 <div class="form-group form-group__submit">
-                    <button type="submit" class="btn btn-primary" style="width: 100%">Sign In</button>
+                    <button class="btn btn-primary sign-in-button" style="width: 100%">Sign In</button>
                 </div>
-            </form>
+
         </div>
         <div class="loginPage__registerInfo">Still no account? Please go to <span class="registerLink">Register</span></div>
         <div class="loginPage__copyrights">&copy; 2016. All RIGHT RESERVED.</div>
