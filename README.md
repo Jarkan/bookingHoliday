@@ -1,5 +1,5 @@
 ### Development
-Builds the application and starts a webserver with livereload. By default the webserver starts at port 1337.
+Builds the application and starts a webserver with livereload. By default the webserver starts at port 3000.
 
 ```shell
 $ gulp
